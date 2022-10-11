@@ -15,7 +15,7 @@ const Home = () => {
                     Quizzes can be revealingly helpful. Your quiz may provide feedback after taking it, so you will know which questions you got right and wrong. This helps you identify any gaps in your knowledge and allows you to determine what you should spend more time studying.
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <Link rel="noopener noreferrer" to="/quiz" className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 hover:dark:bg-violet-600">Quiz</Link>
+                        <Link rel="noopener noreferrer" to="/quiz" className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 hover:dark:bg-violet-600">Take A Quiz</Link>
                         <Link rel="noopener noreferrer" to="/statistic" className="px-8 py-3 text-lg font-semibold border border-gray-500 rounded text-gray-900 hover:bg-slate-200">Stastistics</Link>
                     </div>
                 </div>
