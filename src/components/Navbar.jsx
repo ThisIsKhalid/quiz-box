@@ -1,37 +1,26 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import icon from '../images/nav-icon.png'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-slate-100">
         <div className="relative flex items-center justify-between">
-          <a
-            href="home"
+          <Link
+            to="/"
             aria-label="Company"
             title="Company"
             className="inline-flex items-center"
           >
-            <svg
-              className="w-8 text-deep-purple-accent-400"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Company
+            <img className='h-10 w-10' src={icon} alt="" />
+            <span className="ml-2 text-4xl font-extrabold tracking-wide text-gray-800 font-mono">
+              <span className='text-purple-500'>Quiz</span><span className='text-orange-400'>
+              Box
+              </span>
             </span>
-          </a>
+          </Link>
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
@@ -63,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="statistics"
+                to="statistic"
                 aria-label="Our product"
                 title="Our product"
                 className={({ isActive }) =>
@@ -117,31 +106,19 @@ const Navbar = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="home"
+                      <Link
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         className="inline-flex items-center"
                       >
-                        <svg
-                          className="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                        <img src={icon} alt="" />
+                        <span className="ml-2 text-3xl font-extrabold tracking-wide text-gray-800 font-mono">
+                          <span className='text-purple-500'>Quiz</span><span className='text-orange-400'>
+                          Box
+                          </span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -191,7 +168,7 @@ const Navbar = () => {
                     </li>
                     <li>
                     <NavLink
-                        to="statistics"
+                        to="statistic"
                         aria-label="Our product"
                         title="Our product"
                         className={({ isActive }) =>
