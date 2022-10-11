@@ -1,9 +1,10 @@
 import React from 'react';
 
-const QuesOption = ({option, index}) => {
+const QuesOption = ({option, index, id}) => {
     return (
-        <div>
-            <h1>{option}</h1>
+        <div className='text-lg'>
+            <input type="radio" name={id} id={index} />
+            <label htmlFor={index}>  {option}</label>
         </div>
     );
 };

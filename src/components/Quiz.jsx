@@ -8,7 +8,7 @@ const Quiz = () => {
     
     return (
         <div>
-            <h1>Quiz of {name}</h1>
+            <h1 className='text-4xl font-bold font-mono text-center my-5 text-gray-700'>Quiz of <span className='text-fuchsia-700'>{name}</span> :</h1>
             <div>
                 {
                     questions.map((question, index) => <Questions
