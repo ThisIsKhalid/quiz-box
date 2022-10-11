@@ -3,7 +3,6 @@ import QuesOption from './QuesOption';
 
 const Questions = ({questions, questionNumber}) => {
     const {options, question, id, correctAnswer} = questions;
-    console.log(correctAnswer);
     return (
         <div className='container mx-auto w-3/4 border border-slate-100 shadow-lg rounded-lg text-violet-900 font-mono mb-5'>
             <h1 className='text-2xl text-center w-2/3 mx-auto mb-3'>Quiz {questionNumber}:  {question}</h1>
@@ -14,6 +13,7 @@ const Questions = ({questions, questionNumber}) => {
                     index={index}
                     option={option}
                     id={id}
+                    correctAnswer={correctAnswer}
                     ></QuesOption>)
                 }
             </div>
