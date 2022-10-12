@@ -1,9 +1,9 @@
-# QuizBox
+# QuizBox React-app
 Here you can take a quiz and make your basic strong. So give it a shot!!
 
 
 ## Live Link
-Hosted in Netlify => 
+Hosted in Netlify => https://b6-quiz-crackerz-thisiskhalid.netlify.app
 
 ## Step I followed to make this project
 
