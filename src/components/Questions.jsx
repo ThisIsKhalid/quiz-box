@@ -24,7 +24,6 @@ const Questions = ({questions, questionNumber}) => {
                 {
                     options.map((option, index) => <QuesOption
                     key={index}
-                    index={index}
                     option={option}
                     id={id}
                     correctAnswer={correctAnswer}

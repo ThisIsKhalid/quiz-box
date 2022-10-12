@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const QuesOption = ({option, index, id, correctAnswer}) => {
+const QuesOption = ({option, id, correctAnswer}) => {
 
     const getRightOrWrong = (ans) => {
         if(ans === correctAnswer){
@@ -13,9 +13,9 @@ const QuesOption = ({option, index, id, correctAnswer}) => {
     }
 
     return (
-        <div onClick={() =>getRightOrWrong(option)} className='text-lg border border-violet-300 pl-5 py-2' >
-            <input type="radio" name={id} id={index} />
-            <label htmlFor={index}>  {option}</label>
+        <div className='text-lg border border-violet-300 pl-5 py-2 flex flex-row items-center' >
+            <input onClick={() =>getRightOrWrong(option)} type="radio" name={id} />
+            <p className='ml-5'>{option}</p>
         </div>
     );
 };
